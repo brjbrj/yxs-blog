@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simditor</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./asset/simditor/site/assets/styles/simditor.css" />
+    <script type="text/javascript" src="./asset/simditor/site/assets/scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="./asset/simditor/site/assets/scripts/module.js"></script>
+    <script type="text/javascript" src="./asset/simditor/site/assets/scripts/hotkeys.js"></script>
+    <script type="text/javascript" src="./asset/simditor/site/assets/scripts/uploader.js"></script>
+    <script type="text/javascript" src="./asset/simditor/site/assets/scripts/simditor.js"></script>
+
+</head>
+<body>
+    <div style="margin: 100px 20%;">
+        <textarea id="editor" placeholder="请输入内容" autofocus></textarea>
+    </div>
+</body>
+<script type="text/javascript">
+// 初始化Simditor
+var editor = new Simditor({
+    textarea: $('#editor'),
+    toolbarFloat: false,
+    toolbar: [
+        'title',        // 标题
+        'bold',         // 加粗文字
+        'italic',       // 斜体文字
+        'underline',    // 下划线
+        'strikethrough',// 删除线
+        '|',            // 控件分隔线
+        'fontScale',    // 字体大小
+        'color',        // 字体颜色
+        'ol',           // 有序列表
+        'ul',           // 无序列表
+        'blockquote',   // 引用
+        'code',         // 代码块
+        'table',        // 表格
+        'link',         // 链接
+        'image',        // 图片
+        'hr',           // 分割线
+        'indent',       // 向右缩进
+        'outdent',      // 向左缩进
+        'alignment'     // 水平对齐
+    ]
+});
+</script>
+</html>
