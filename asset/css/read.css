@@ -1,0 +1,68 @@
+.scroll
+{
+	margin-left:10px;
+}
+
+.scroll:hover::-webkit-scrollbar
+{
+	width: 10px;
+}
+
+.scroll::-webkit-scrollbar {
+	width: 10px;
+}
+
+/*正常情况下滑块的样式*/
+.scroll::-webkit-scrollbar-thumb {
+	background-color:#D59DFC;
+	border-radius: 10px;
+	-webkit-box-shadow: inset 1px 1px 0 rgba(0,0,0,.1);
+}
+
+/*鼠标悬浮在该类指向的控件上时滑块的样式*/
+.scroll:hover::-webkit-scrollbar-thumb {
+	background-color: #D59DFC;
+	border-radius: 10px;
+	-webkit-box-shadow: inset 1px 1px 0 rgba(0,0,0,.1);
+}
+
+/*鼠标悬浮在滑块上时滑块的样式*/
+.scroll::-webkit-scrollbar-thumb:hover {
+	background-color: #9E19F8;
+	-webkit-box-shadow: inset 1px 1px 0 rgba(0,0,0,.1);
+}
+
+/*正常时候的主干部分*/
+.scroll::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px white;
+	background-color: white;
+}
+
+/*鼠标悬浮在滚动条上的主干部分*/
+
+.scroll::-webkit-scrollbar-track:hover {
+	-webkit-box-shadow: inset 0 0 6px #FFF1DD;
+	background-color: white;
+}
+.hideSlow{
+	animation: showtip 5s 1;
+	animation-fill-mode: forwards;
+}
+@keyframes showtip {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@-webkit-keyframes showtip {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
