@@ -54,6 +54,7 @@ INSERT INTO `brj_admin` VALUES ('mail_pwd', '****');
 INSERT INTO `brj_admin` VALUES ('yzm_reg', '0');
 INSERT INTO `brj_admin` VALUES ('yzm_login', '0');
 INSERT INTO `brj_admin` VALUES ('yzm_len', '4');
+INSERT INTO `brj_admin` VALUES ('yzm_time', '60');
 INSERT INTO `brj_admin` VALUES ('yzm_mod_reg', '');
 INSERT INTO `brj_admin` VALUES ('yzm_mod_login', '');
 INSERT INTO `brj_admin` VALUES ('yzm_mod_login_head', '');
