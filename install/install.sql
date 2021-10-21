@@ -10,9 +10,11 @@ PRIMARY KEY (`id`)
 
 DROP TABLE IF EXISTS `brj_color`;
 create table `brj_color` (
-`k` varchar(32) NOT NULL,
-`v` text,
-PRIMARY KEY (`k`)
+`id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+`type` varchar(32) NOT NULL,
+`title` varchar(32) NOT NULL,
+`value` varchar(8) NOT NULL,
+PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 DROP TABLE IF EXISTS `brj_admin`;
@@ -95,3 +97,28 @@ INSERT INTO `brj_admin` VALUES ('edit_linkvideo', 'true');
 INSERT INTO `brj_admin` VALUES ('edit_EA2', 'KB');
 INSERT INTO `brj_admin` VALUES ('edit_val2', '10');
 INSERT INTO `brj_admin` VALUES ('edit_type2', '');
+INSERT INTO `brj_color` VALUES ( '', 'admin', '菜单背景色','#000000');
+INSERT INTO `brj_color` VALUES ( '', 'admin', '界面背景色','#000000');
+INSERT INTO `brj_color` VALUES ( '', 'admin', '表头背景色','#000000');
+INSERT INTO `brj_color` VALUES ( '', 'admin', '标签背景色','#000000');
+INSERT INTO `brj_color` VALUES ( '', 'admin', '表头字体色','#000000');
+INSERT INTO `brj_color` VALUES ( '', 'admin', '标签字体色','#000000');
+INSERT INTO `brj_color` VALUES ( '', 'admin', '侧边菜单悬浮背景色','#000000');
+INSERT INTO `brj_color` VALUES ( '', 'admin', '侧边菜单选中背景色','#000000');
+INSERT INTO `brj_color` VALUES ( '', 'admin', '侧边菜单标记色','#000000');
+INSERT INTO `brj_color` VALUES ( '', 'admin', '侧边菜单字体色','#000000');
+INSERT INTO `brj_color` VALUES ( '', 'admin', '侧边菜单悬浮选中字体色','#000000');
+INSERT INTO `brj_color` VALUES ( '', 'admin', '侧边菜单划分线色','#000000');
+INSERT INTO `brj_color` VALUES ( '', 'admin', '按钮背景色','#000000');
+INSERT INTO `brj_color` VALUES ( '', 'admin', '按钮字体色','#000000');
+INSERT INTO `brj_color` VALUES ( '', 'admin', '按钮悬浮背景色','#000000');
+INSERT INTO `brj_color` VALUES ( '', 'admin', '按钮悬浮字体色','#000000');
+INSERT INTO `brj_color` VALUES ( '', 'admin', '文本框背景色','#000000');
+INSERT INTO `brj_color` VALUES ( '', 'admin', '文本框悬浮选中背景色','#000000');
+INSERT INTO `brj_color` VALUES ( '', 'admin', '文本框字体色','#000000');
+INSERT INTO `brj_color` VALUES ( '', 'admin', '文本框字体悬浮选中色','#000000');
+INSERT INTO `brj_color` VALUES ( '', 'admin', '文本边框色','#000000');
+INSERT INTO `brj_color` VALUES ( '', 'admin', '文本边框悬浮选中色','#000000');
+INSERT INTO `brj_color` VALUES ( '', 'admin', '后台的滚轮条色','#000000');
+INSERT INTO `brj_color` VALUES ( '', 'admin', '文本框滚轮条色','#000000');
+INSERT INTO `brj_color` VALUES ( '', 'admin', 'LOGO色','#000000');
